@@ -1,0 +1,297 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Source Sans Pro", sans-serif;
+  src: url(../assets/fonts/Source_Sans_Pro.zip);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+header .navbar {
+  padding: 1rem;
+}
+
+header .navbar .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar .container .navbar-brand {
+  font-size: 0;
+}
+
+header .navbar .container .navbar-brand .logo {
+  height: 1.875rem;
+}
+
+header .navbar .container .navbar-brand .logo {
+  height: 1.563rem;
+}
+
+header .navbar .container .navbar-brand .logo {
+  height: 1.25rem;
+}
+
+.CABECERA {
+  background: linear-gradient(to left, rgba(2, 0, 3, 0.767), rgba(2, 0, 3, 0.767));
+  top: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.CuerpoDePag {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url(../assets/img/estrellas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.ListaItem {
+  list-style: none;
+}
+
+.linknav {
+  color: white;
+  text-decoration: none; /*links sin decoraciones*/
+  font-size: 1, 5em; /*tamaño de la letra*/
+}
+
+.SeccionUltimosLanzamientos {
+  text-align: center;
+}
+
+.tituloindex {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Videos {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.imagenindex {
+  height: 30rem;
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  size: 8rem;
+}
+
+.btn-custom {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.fondo_bio {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url(../assets/img/Rauw\ bio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.titulobio {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#bio .bio_bg .bio_parrafo {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  margin: 0 3em;
+  margin-top: 7rem;
+}
+
+#bio .bio_titulo {
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.1;
+  padding-left: 3rem;
+}
+
+.fondo_discografia {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/fondo\ disco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.titulodisco {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.discos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imagenesdisco {
+  height: 30rem;
+  width: 30rem;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.imagenesdisco:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.fondo_tour {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/Saturno\ fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.titulotour {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tour-dates {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .tour-dates {
+    grid-template-columns: 1fr;
+  }
+}
+.tour-date {
+  background-color: rgba(10, 4, 48, 0.9647058824);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tour-date h3 {
+  margin-top: 0;
+}
+
+.tour-date p {
+  margin-bottom: 10px;
+}
+
+.ticket-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ticket-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.fondo_contacto {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/duars.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.titulocontacto {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactodivision {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactotexto {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.pie-footer .container {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.pie-footer .container .footer-logo {
+  height: 40px;
+}
+
+@media screen and (max-width: 425px) {
+  .pie-footer .container .footer-logo {
+    height: 30px;
+  }
+}
+.pie-footer .container .iconos {
+  font-size: 1.3rem;
+  margin: 0 20px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.pie-footer .container .iconos:hover {
+  color: #919191;
+}
+
+.pie-footer .container .footer_parrafo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.pie-footer .container .footer_parrafo {
+  text-align: center;
+}
+
+.pie-footer .container .footer_parrafo {
+  font-size: 0.8rem;
+}
+
+.card {
+  background-color: rgba(255, 248, 248, 0);
+}/*# sourceMappingURL=main.css.map */
