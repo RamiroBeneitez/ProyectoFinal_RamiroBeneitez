@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 @font-face {
   font-family: "Source Sans Pro", sans-serif;
   src: url(../assets/fonts/Source_Sans_Pro.zip);
@@ -9,28 +9,32 @@
   box-sizing: border-box;
   color: white;
 }
+
 .CABECERA {
-    background: linear-gradient(to left, rgba(2, 0, 3, 0.767), rgba(2, 0, 3, 0.767));
-    top: 0;
-    header .navbar {
-        padding: 1rem;}
-    .container {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between;}
-        .navbar-brand {
-            font-size: 0;}
-            .logo {
-                height: 1.875rem;}
-            .logo {
-                height: 1.563rem;}
-            .logo {
-               height: 1.25rem;}}
-  
-
-
-
+  background: linear-gradient(to left, rgba(2, 0, 3, 0.767), rgba(2, 0, 3, 0.767));
+  top: 0;
+}
+.CABECERA header .navbar {
+  padding: 1rem;
+}
+.CABECERA .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+.CABECERA .navbar-brand {
+  font-size: 0;
+}
+.CABECERA .logo {
+  height: 1.875rem;
+}
+.CABECERA .logo {
+  height: 1.563rem;
+}
+.CABECERA .logo {
+  height: 1.25rem;
+}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -284,4 +288,4 @@ body {
 
 .card {
   background-color: rgba(255, 248, 248, 0);
-}
+}/*# sourceMappingURL=main.css.map */
