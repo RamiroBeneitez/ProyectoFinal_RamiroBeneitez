@@ -1,0 +1,28 @@
+/*discografia*/
+.fondo_discografia {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/fondo\ disco.jpg);
+  background-size: cover;
+  background-position: center;
+  .titulodisco {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .discos {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .imagenesdisco {
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  } 
+    .imagenesdisco:hover {
+      transform: rotate(5deg);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+}

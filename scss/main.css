@@ -1,21 +1,10 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "Source Sans Pro", sans-serif;
-  src: url(../assets/fonts/Source_Sans_Pro.zip);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: white;
-}
-
+/*header_x5*/
 .CABECERA {
   background: linear-gradient(to left, rgba(2, 0, 3, 0.767), rgba(2, 0, 3, 0.767));
   top: 0;
 }
 .CABECERA header .navbar {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .CABECERA .container {
   display: flex;
@@ -27,47 +16,27 @@
   font-size: 0;
 }
 .CABECERA .logo {
-  height: 1.875rem;
+  height: 1.9rem;
 }
 .CABECERA .logo {
-  height: 1.563rem;
+  width: 12rem;
 }
-.CABECERA .logo {
-  height: 1.25rem;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.CuerpoDePag {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url(../assets/img/estrellas.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.logo {
-  width: 15rem;
-}
-
-.ul {
+.CABECERA .ul {
   display: flex;
   justify-content: space-between;
   margin: 5%;
 }
-
-.ListaItem {
-  list-style: none;
-}
-
-.linknav {
+.CABECERA .nav-link {
   color: white;
-  text-decoration: none; /*links sin decoraciones*/
-  font-size: 1, 5em; /*tamaño de la letra*/
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
-.SeccionUltimosLanzamientos {
-  text-align: center;
+/*index*/
+.CuerpoDePag {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url(../assets/img/estrellas.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .tituloindex {
@@ -91,6 +60,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.card {
+  background: none;
+}
+
 .botones {
   display: flex;
   justify-content: space-around;
@@ -112,18 +85,17 @@ body {
   color: #fff;
 }
 
+/*biografia*/
 .fondo_bio {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url(../assets/img/Rauw\ bio.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.titulobio {
+.fondo_bio .titulobio {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
-#bio .bio_bg .bio_parrafo {
+.fondo_bio #bio .bio_bg .bio_parrafo {
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
@@ -132,43 +104,42 @@ body {
   margin: 0 3em;
   margin-top: 7rem;
 }
-
-#bio .bio_titulo {
+.fondo_bio #bio .bio_titulo {
   font-size: calc(1.525rem + 3.3vw);
   line-height: 1.1;
   padding-left: 3rem;
 }
 
+/*discografia*/
 .fondo_discografia {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/fondo\ disco.jpg);
   background-size: cover;
   background-position: center;
 }
-
-.titulodisco {
+.fondo_discografia .titulodisco {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
-.discos {
+.fondo_discografia .discos {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.imagenesdisco {
+.fondo_discografia .imagenesdisco {
   height: 30rem;
   width: 30rem;
   margin-bottom: 1rem;
   border: none;
   box-shadow: none;
   transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.fondo_discografia .imagenesdisco:hover {
+  transform: rotate(5deg);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.imagenesdisco:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
+/*tour*/
 .fondo_tour {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/Saturno\ fondo.jpg);
   background-size: cover;
@@ -221,28 +192,27 @@ body {
   border: 2px solid #000;
 }
 
+/*contacto*/
 .fondo_contacto {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../assets/img/duars.png);
   background-position: center;
   background-size: cover;
 }
-
-.titulocontacto {
+.fondo_contacto .titulocontacto {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
-.contactodivision {
+.fondo_contacto .contactodivision {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.contactotexto {
+.fondo_contacto .contactotexto {
   text-decoration: none;
   font-size: 1.3rem;
   color: #ffffff;
 }
 
+/*footer*/
 .footer {
   padding: 2rem 0;
 }
@@ -286,6 +256,13 @@ body {
   font-size: 0.8rem;
 }
 
-.card {
-  background-color: rgba(255, 248, 248, 0);
+@font-face {
+  font-family: "Source Sans Pro", sans-serif;
+  src: url(../assets/fonts/Source_Sans_Pro.zip);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
