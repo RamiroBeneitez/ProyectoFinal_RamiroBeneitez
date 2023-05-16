@@ -134,9 +134,7 @@
   border-radius: 5px;
 }
 .fondo_discografia .imagenesdisco:hover {
-  transform: rotate(5deg);
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
 }
 
 /*tour*/
