@@ -196,15 +196,18 @@
   background-position: center;
   background-size: cover;
 }
-.fondo_contacto .titulocontacto {
+
+.titulocontacto {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.fondo_contacto .contactodivision {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+
+.contactodivision {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-.fondo_contacto .contactotexto {
+
+.contactotexto {
   text-decoration: none;
   font-size: 1.3rem;
   color: #ffffff;
